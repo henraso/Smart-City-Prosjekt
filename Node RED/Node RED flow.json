@@ -1,0 +1,2300 @@
+[
+    {
+        "id": "fc1bf5e95c54c019",
+        "type": "tab",
+        "label": "Garasje",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "34cb701916ba5245",
+        "type": "tab",
+        "label": "Trafikklys",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d62d8cc2beee92ca",
+        "type": "tab",
+        "label": "Tidtaker",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7058345e30efef26",
+        "type": "tab",
+        "label": "Zumo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "db22b06698a51886",
+        "type": "tab",
+        "label": "MILJØSENSOR",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8ec5fd30d3bebd89",
+        "type": "tab",
+        "label": "KONTO",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "68ddb2a442a17240",
+        "type": "tab",
+        "label": "SOLCELLE",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "10e78a89.5b4fd5",
+        "type": "mqtt-broker",
+        "name": "esp32",
+        "broker": "gruppe26.kicks-ass.net",
+        "port": "1883",
+        "clientid": "espClient",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "61285987.c20328",
+        "type": "ui_group",
+        "name": "Garasje",
+        "tab": "52cff69bd0b498e6",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "a5b5399e04286cbd",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Smart-City",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4c35ca",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#484242",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#7c58a7",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Smart-City",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 46,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ad406355bf12c2cc",
+        "type": "ui_group",
+        "name": "Trafikklys",
+        "tab": "52cff69bd0b498e6",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "52cff69bd0b498e6",
+        "type": "ui_tab",
+        "name": "DASHBOARD",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c70e1e6c94bf2c84",
+        "type": "mqtt-broker",
+        "name": "hivemq",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "espClient",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a4f1ff11c7260dd7",
+        "type": "ui_tab",
+        "name": "TIDTAKER",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "abd583b5edba899b",
+        "type": "ui_group",
+        "name": "Tidtaker",
+        "tab": "52cff69bd0b498e6",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "62bc9c6fc7b57fbf",
+        "type": "ui_tab",
+        "name": "Zumo",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c9e7c4182c3a24c6",
+        "type": "ui_group",
+        "name": "Zumo",
+        "tab": "52cff69bd0b498e6",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "37afcfd1ac12e890",
+        "type": "ui_group",
+        "name": "MILJØSENSOR",
+        "tab": "52cff69bd0b498e6",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "809e87adf6127e35",
+        "type": "ui_group",
+        "name": "KONTO",
+        "tab": "52cff69bd0b498e6",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "53b7cd42a70f46d4",
+        "type": "ui_spacer",
+        "z": "fc1bf5e95c54c019",
+        "name": "spacer",
+        "group": "61285987.c20328",
+        "order": 3,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "51bd87615957c844",
+        "type": "ui_group",
+        "name": "SOLCELLE",
+        "tab": "52cff69bd0b498e6",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "a56b0358f0af4937",
+        "type": "ui_spacer",
+        "z": "8ec5fd30d3bebd89",
+        "name": "spacer",
+        "group": "809e87adf6127e35",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9e58624.7faaba",
+        "type": "mqtt out",
+        "z": "fc1bf5e95c54c019",
+        "name": "",
+        "topic": "esp32/garageOutput",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 540,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "83cf37cf.c76988",
+        "type": "ui_switch",
+        "z": "fc1bf5e95c54c019",
+        "name": "",
+        "label": "Åpne/Lukke garasje",
+        "tooltip": "Åpner og lukker garasjen",
+        "group": "61285987.c20328",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "closed",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "open",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 280,
+        "y": 360,
+        "wires": [
+            [
+                "9e58624.7faaba",
+                "c436bd15da4b8743"
+            ]
+        ]
+    },
+    {
+        "id": "4aecba01.78ce64",
+        "type": "mqtt in",
+        "z": "fc1bf5e95c54c019",
+        "name": "",
+        "topic": "esp32/garageDoor",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "22efa7b7.544a28",
+                "c04d0516cb15a0a6"
+            ]
+        ]
+    },
+    {
+        "id": "22efa7b7.544a28",
+        "type": "debug",
+        "z": "fc1bf5e95c54c019",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "24df9f32cff9a33e",
+        "type": "ui_text",
+        "z": "fc1bf5e95c54c019",
+        "group": "61285987.c20328",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Tilstand garasje:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 760,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c04d0516cb15a0a6",
+        "type": "function",
+        "z": "fc1bf5e95c54c019",
+        "name": "Gjør om inngangsverdier",
+        "func": "if (msg.payload === \"1.00\") { //sjekker inngangsverdi\n    msg.payload = \"ÅPEN\"      //endrer til \"ÅPEN\", hvis msg.payload === \"1.00\"\n    return msg;               //returnerer ny msg.payload\n}\n\n\nif(msg.payload === \"0.00\") {  //sjekker inngangsverdi\n    msg.payload = \"STENGT\"    //endrer til \"STENGT\", hvis msg.payload === \"0.00\"\n    return msg;               //returnerer ny msg.payload\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "24df9f32cff9a33e"
+            ]
+        ]
+    },
+    {
+        "id": "c436bd15da4b8743",
+        "type": "debug",
+        "z": "fc1bf5e95c54c019",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7a581b2b822b879c",
+        "type": "link in",
+        "z": "fc1bf5e95c54c019",
+        "name": "openGarage",
+        "links": [
+            "053eea5a298cf635"
+        ],
+        "x": 365,
+        "y": 420,
+        "wires": [
+            [
+                "9e58624.7faaba"
+            ]
+        ]
+    },
+    {
+        "id": "607445aa30739294",
+        "type": "comment",
+        "z": "fc1bf5e95c54c019",
+        "name": "Bryter for å åpne og lukke garasjen",
+        "info": "",
+        "x": 220,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "abf0dc8b9a830781",
+        "type": "comment",
+        "z": "fc1bf5e95c54c019",
+        "name": "Signal fra når bilen går til garasjen",
+        "info": "Når bilen får beskjed om å dra til garasjen, åpnes porten",
+        "x": 800,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e9e0cf7cb31a5626",
+        "type": "comment",
+        "z": "fc1bf5e95c54c019",
+        "name": "Viser tilstanden i dashbordet",
+        "info": "",
+        "x": 800,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e2edaab75dde826e",
+        "type": "ui_button",
+        "z": "34cb701916ba5245",
+        "name": "",
+        "group": "ad406355bf12c2cc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Trafikklys",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{colour}}",
+        "className": "",
+        "icon": "",
+        "payload": "on7",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "c8173a2e7e40c172",
+                "7ef4edd2a3da9918"
+            ]
+        ]
+    },
+    {
+        "id": "7ef4edd2a3da9918",
+        "type": "mqtt out",
+        "z": "34cb701916ba5245",
+        "name": "",
+        "topic": "esp32/outputStreetLight",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 870,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "205fa26e46f6ddb5",
+        "type": "mqtt in",
+        "z": "34cb701916ba5245",
+        "name": "",
+        "topic": "esp32/trafficLightState",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [
+                "afb9ba725b7569b6",
+                "e215ceb18e23014d",
+                "1f6f1b4049cae5de"
+            ]
+        ]
+    },
+    {
+        "id": "15f802f194e030b0",
+        "type": "ui_text",
+        "z": "34cb701916ba5245",
+        "group": "ad406355bf12c2cc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trafikklys",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 760,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "afb9ba725b7569b6",
+        "type": "function",
+        "z": "34cb701916ba5245",
+        "name": "Tilstand trafikklys til Dashboard",
+        "func": "if (msg.payload == 1.00){     //sjekker inngangsvariabel\n    msg.payload = \"Grønt lys\" //sender \"grønt lys\" på msg.payload\n}\nif (msg.payload == 0.00){     //sjekker inngangsvariabel\n    msg.payload = \"Rødt lys\"  //sender \"rødt lys\"\n\n}\nreturn msg; //returnerer msg               ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 400,
+        "wires": [
+            [
+                "15f802f194e030b0"
+            ]
+        ]
+    },
+    {
+        "id": "b9640f123290ea87",
+        "type": "mqtt in",
+        "z": "34cb701916ba5245",
+        "name": "",
+        "topic": "esp32/trafficButtonPressed",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "271703bb7c643c9d"
+            ]
+        ]
+    },
+    {
+        "id": "271703bb7c643c9d",
+        "type": "function",
+        "z": "34cb701916ba5245",
+        "name": "Tilstand knapp",
+        "func": "if (msg.payload == 0.00){  //sjekker inngangsvariabel\n    msg.payload = \"Knapp trykket\"  //endrer msg som sendes\n}\nif (msg.payload == 1){ //sjekker inngangsvariabel\n    msg.payload = \"Tilstand oppdatert\" //endrer msg som sendes\n\n}\nreturn msg; //returnerer ny msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 520,
+        "wires": [
+            [
+                "797bb71d528a70a4"
+            ]
+        ]
+    },
+    {
+        "id": "797bb71d528a70a4",
+        "type": "ui_text",
+        "z": "34cb701916ba5245",
+        "group": "ad406355bf12c2cc",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Knapp: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 680,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b47523b94a1a556f",
+        "type": "link out",
+        "z": "34cb701916ba5245",
+        "name": "trafficlightstate",
+        "mode": "link",
+        "links": [
+            "cac7ae194349e96a"
+        ],
+        "x": 715,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e215ceb18e23014d",
+        "type": "function",
+        "z": "34cb701916ba5245",
+        "name": "Tilstand trafikklys til Zumo",
+        "func": "if (msg.payload == 1.00){  //sjekker inngangsvariabel\n    msg.payload = \"off9\"   //endrer msg.payload til \"off9\"\n}\nif (msg.payload == 0.00){  //sjekker inngangsvariabel\n    msg.payload = \"on9\"    //endrer msg.payload til \"on9\"\n\n}\nreturn msg;  //Returnerer ny msg.payload",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 440,
+        "wires": [
+            [
+                "b47523b94a1a556f"
+            ]
+        ]
+    },
+    {
+        "id": "c8173a2e7e40c172",
+        "type": "debug",
+        "z": "34cb701916ba5245",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1f6f1b4049cae5de",
+        "type": "function",
+        "z": "34cb701916ba5245",
+        "name": "Endre farge på knapp",
+        "func": "if (msg.payload == 1.00){ //sjekker inngangsverdi\n    msg.colour = \"#28d74e\" //endrer farge til grønn\n}\nif (msg.payload == 0.00){ //sjekker inngangsverdi\n    msg.colour = \"#dc2324\" //endrer farge til rødt\n}\nreturn msg; //returnerer msg.colour",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "e2edaab75dde826e"
+            ]
+        ]
+    },
+    {
+        "id": "5adb6fa35d783c6d",
+        "type": "comment",
+        "z": "34cb701916ba5245",
+        "name": "Får input fra esp32en som styrer trafikklyset",
+        "info": "",
+        "x": 190,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "aad14f90f18d0290",
+        "type": "comment",
+        "z": "34cb701916ba5245",
+        "name": "Knapp som setter trafikklyset til rødt",
+        "info": "",
+        "x": 580,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "23adb6bc398f3c29",
+        "type": "comment",
+        "z": "34cb701916ba5245",
+        "name": "Viser tilstanden til trafikklyset i dashbordet",
+        "info": "",
+        "x": 1000,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7dda7d1e83124d89",
+        "type": "comment",
+        "z": "34cb701916ba5245",
+        "name": "Tilstand til knappen blir vist",
+        "info": "",
+        "x": 870,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d345ca748ab68d94",
+        "type": "mqtt in",
+        "z": "d62d8cc2beee92ca",
+        "name": "",
+        "topic": "esp32/timerEnd",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "c3bd30909c3bb216",
+                "ba3b6ae9b72536d5"
+            ]
+        ]
+    },
+    {
+        "id": "c3bd30909c3bb216",
+        "type": "debug",
+        "z": "d62d8cc2beee92ca",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ba3b6ae9b72536d5",
+        "type": "ui_text",
+        "z": "d62d8cc2beee92ca",
+        "group": "abd583b5edba899b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "TID",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 330,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "fd60a8e1e82d4c87",
+        "type": "comment",
+        "z": "d62d8cc2beee92ca",
+        "name": "Får tilsendt tid fra tidtaker-espen",
+        "info": "",
+        "x": 190,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f5d161466eb644fd",
+        "type": "comment",
+        "z": "d62d8cc2beee92ca",
+        "name": "Viser tid i dashbord",
+        "info": "",
+        "x": 490,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ce8e5e5e8bb48c4a",
+        "type": "ui_gauge",
+        "z": "7058345e30efef26",
+        "name": "",
+        "group": "c9e7c4182c3a24c6",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Battery Health",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#11ff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 380,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2bd4c8c3cdc40249",
+        "type": "ui_gauge",
+        "z": "7058345e30efef26",
+        "name": "",
+        "group": "c9e7c4182c3a24c6",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Battery Percentage",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#37ff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 390,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "78041dc9049d4955",
+        "type": "ui_button",
+        "z": "7058345e30efef26",
+        "name": "",
+        "group": "c9e7c4182c3a24c6",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Nødlader",
+        "tooltip": "Iverksetter nødlading",
+        "color": "",
+        "bgcolor": "#be5a41",
+        "className": "",
+        "icon": "",
+        "payload": "on1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "3730222a2169a370"
+            ]
+        ]
+    },
+    {
+        "id": "b845665f588a4691",
+        "type": "ui_gauge",
+        "z": "7058345e30efef26",
+        "name": "",
+        "group": "c9e7c4182c3a24c6",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Speedometer",
+        "label": "cm/s",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 380,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "185c6c5efb6429c2",
+        "type": "mqtt in",
+        "z": "7058345e30efef26",
+        "name": "",
+        "topic": "esp32/speedometer",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "b845665f588a4691",
+                "aea838d18eae0e03"
+            ]
+        ]
+    },
+    {
+        "id": "297ae3b953a1c191",
+        "type": "mqtt in",
+        "z": "7058345e30efef26",
+        "name": "",
+        "topic": "esp32/batterypercentage",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "2bd4c8c3cdc40249"
+            ]
+        ]
+    },
+    {
+        "id": "0b22fbf04ee1ac59",
+        "type": "mqtt in",
+        "z": "7058345e30efef26",
+        "name": "",
+        "topic": "esp32/batteryhealth",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "ce8e5e5e8bb48c4a"
+            ]
+        ]
+    },
+    {
+        "id": "757dc8fca6f66354",
+        "type": "mqtt out",
+        "z": "7058345e30efef26",
+        "name": "",
+        "topic": "esp32/enterCharging",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 540,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "77d26d73de951d19",
+        "type": "mqtt out",
+        "z": "7058345e30efef26",
+        "name": "",
+        "topic": "esp32/emergencyCharging",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 560,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a980f3cc0b505ced",
+        "type": "mqtt in",
+        "z": "7058345e30efef26",
+        "name": "",
+        "topic": "esp32/distance",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "f58cd6ea603aa996"
+            ]
+        ]
+    },
+    {
+        "id": "f58cd6ea603aa996",
+        "type": "ui_text",
+        "z": "7058345e30efef26",
+        "group": "c9e7c4182c3a24c6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Distanse kjørt (m): ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 390,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3bd8a8d74e1d73e1",
+        "type": "mqtt in",
+        "z": "7058345e30efef26",
+        "name": "",
+        "topic": "esp32/lastminavg",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "4c191c3206e0e210"
+            ]
+        ]
+    },
+    {
+        "id": "4c191c3206e0e210",
+        "type": "ui_text",
+        "z": "7058345e30efef26",
+        "group": "c9e7c4182c3a24c6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Siste minutts gjennomsnittshastighet (cm/s)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 470,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "aea838d18eae0e03",
+        "type": "debug",
+        "z": "7058345e30efef26",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "2fd10113e9083006",
+        "type": "ui_button",
+        "z": "7058345e30efef26",
+        "name": "",
+        "group": "c9e7c4182c3a24c6",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Service batteri",
+        "tooltip": "Utfører service på batteri",
+        "color": "",
+        "bgcolor": "#d0a22f",
+        "className": "",
+        "icon": "",
+        "payload": "on4",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "f93bcde8b5d605cd"
+            ]
+        ]
+    },
+    {
+        "id": "0becfe1c01b349d7",
+        "type": "ui_button",
+        "z": "7058345e30efef26",
+        "name": "",
+        "group": "c9e7c4182c3a24c6",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Bytt batteri",
+        "tooltip": "Gjennomfører bytte av batteri",
+        "color": "",
+        "bgcolor": "#be419a",
+        "className": "",
+        "icon": "",
+        "payload": "on3",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "2cb6cb6913d015ad"
+            ]
+        ]
+    },
+    {
+        "id": "3730222a2169a370",
+        "type": "trigger",
+        "z": "7058345e30efef26",
+        "name": "",
+        "op1": "on1",
+        "op2": "off1",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "77d26d73de951d19"
+            ]
+        ]
+    },
+    {
+        "id": "805284d131d044fd",
+        "type": "link out",
+        "z": "7058345e30efef26",
+        "name": "ChangeBattery",
+        "mode": "link",
+        "links": [
+            "6badb1f48fda415c"
+        ],
+        "x": 455,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "f93bcde8b5d605cd",
+        "type": "trigger",
+        "z": "7058345e30efef26",
+        "name": "",
+        "op1": "on4",
+        "op2": "off4",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "8d8ec6df39c3405b"
+            ]
+        ]
+    },
+    {
+        "id": "2cb6cb6913d015ad",
+        "type": "trigger",
+        "z": "7058345e30efef26",
+        "name": "",
+        "op1": "on3",
+        "op2": "off3",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 320,
+        "y": 700,
+        "wires": [
+            [
+                "805284d131d044fd"
+            ]
+        ]
+    },
+    {
+        "id": "8d8ec6df39c3405b",
+        "type": "link out",
+        "z": "7058345e30efef26",
+        "name": "BatteryService",
+        "mode": "link",
+        "links": [
+            "8c6909f0b9ecb0e0"
+        ],
+        "x": 455,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "41ed5694899d5190",
+        "type": "ui_switch",
+        "z": "7058345e30efef26",
+        "name": "",
+        "label": "Kjør til garasje",
+        "tooltip": "Forteller bilen at den skal kjøre til garasjen",
+        "group": "c9e7c4182c3a24c6",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on2",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off2",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "757dc8fca6f66354",
+                "f1741bdadc3ee985",
+                "634ea07b0d5b3440"
+            ]
+        ]
+    },
+    {
+        "id": "053eea5a298cf635",
+        "type": "link out",
+        "z": "7058345e30efef26",
+        "name": "openGarage",
+        "mode": "link",
+        "links": [
+            "7a581b2b822b879c"
+        ],
+        "x": 695,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "634ea07b0d5b3440",
+        "type": "function",
+        "z": "7058345e30efef26",
+        "name": "Gjør om verdiene ",
+        "func": "if (msg.payload === \"on2\") { //sjekker inngangs-payload\n    msg.payload = \"open\" //hvis \"on2\" endre til \"open\"\n    return msg; //returnerer msg.payload som sendes videre\n}\n\n\nif(msg.payload === \"off2\") { //sjekker inngangs-payload\n    msg.payload = \"closed\" //hvis \"off2\", endre til \"closed\"\n    return msg; //returnerer msg.payload som sendes videre\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "4f4561fd390485cb"
+            ]
+        ]
+    },
+    {
+        "id": "f1741bdadc3ee985",
+        "type": "debug",
+        "z": "7058345e30efef26",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4f4561fd390485cb",
+        "type": "delay",
+        "z": "7058345e30efef26",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 580,
+        "y": 480,
+        "wires": [
+            [
+                "053eea5a298cf635"
+            ]
+        ]
+    },
+    {
+        "id": "817ab1463a4b098e",
+        "type": "comment",
+        "z": "7058345e30efef26",
+        "name": "Får verdier fra ESP32en på Zumoen og displayes i dashbordet",
+        "info": "",
+        "x": 720,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e4f15e5b5b613eb4",
+        "type": "comment",
+        "z": "7058345e30efef26",
+        "name": "Sender status til garasjeporten",
+        "info": "",
+        "x": 800,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "85ffb55dd7473d94",
+        "type": "comment",
+        "z": "7058345e30efef26",
+        "name": "Knapper som iverksetter diverse handlinger på Zumoen",
+        "info": "",
+        "x": 240,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "79bf488087177739",
+        "type": "comment",
+        "z": "7058345e30efef26",
+        "name": "",
+        "info": "Venter 1,5 sekund før ny verdi sendes, altså at porten åpnes eller lukkes 1,5 sekunder etter at knappen er trykket",
+        "x": 560,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cb7cf524ddb3f2f2",
+        "type": "comment",
+        "z": "7058345e30efef26",
+        "name": "Sendes til et annet flow: KONTO",
+        "info": "",
+        "x": 610,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c3ba2b6a92079afc",
+        "type": "ui_chart",
+        "z": "db22b06698a51886",
+        "name": "",
+        "group": "37afcfd1ac12e890",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatur (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccbf1f71ad512c2b",
+        "type": "ui_chart",
+        "z": "db22b06698a51886",
+        "name": "",
+        "group": "37afcfd1ac12e890",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Luftfuktighet (% Relativ luftfuktighet)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 450,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e12c719f7a2b0887",
+        "type": "ui_chart",
+        "z": "db22b06698a51886",
+        "name": "",
+        "group": "37afcfd1ac12e890",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Lufttrykk (hPa)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 360,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04dc6fe1918ca5f1",
+        "type": "mqtt in",
+        "z": "db22b06698a51886",
+        "name": "",
+        "topic": "esp32/pressure",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "e12c719f7a2b0887"
+            ]
+        ]
+    },
+    {
+        "id": "08f5957dfcadf0d4",
+        "type": "mqtt in",
+        "z": "db22b06698a51886",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "c3ba2b6a92079afc"
+            ]
+        ]
+    },
+    {
+        "id": "94d11e67e167318e",
+        "type": "mqtt in",
+        "z": "db22b06698a51886",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "ccbf1f71ad512c2b"
+            ]
+        ]
+    },
+    {
+        "id": "bb11eaeb8fb190e7",
+        "type": "comment",
+        "z": "db22b06698a51886",
+        "name": "Henter data fra en BME280-sensor og vises i dashbordet",
+        "info": "",
+        "x": 290,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d4ffcd5da61cceaa",
+        "type": "ui_text",
+        "z": "8ec5fd30d3bebd89",
+        "group": "809e87adf6127e35",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Saldo",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 430,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "753d87076f9344bf",
+        "type": "mqtt in",
+        "z": "8ec5fd30d3bebd89",
+        "name": "",
+        "topic": "esp32/accountBalance",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "d4ffcd5da61cceaa"
+            ]
+        ]
+    },
+    {
+        "id": "8c6909f0b9ecb0e0",
+        "type": "link in",
+        "z": "8ec5fd30d3bebd89",
+        "name": "BatteryService",
+        "links": [
+            "8d8ec6df39c3405b"
+        ],
+        "x": 175,
+        "y": 160,
+        "wires": [
+            [
+                "53bd99a9ce95667d",
+                "2c67de8d09fa78c2"
+            ]
+        ]
+    },
+    {
+        "id": "6badb1f48fda415c",
+        "type": "link in",
+        "z": "8ec5fd30d3bebd89",
+        "name": "ChangeBattery",
+        "links": [
+            "805284d131d044fd"
+        ],
+        "x": 175,
+        "y": 220,
+        "wires": [
+            [
+                "949052c97c7edc59",
+                "5fc9f1b4d0bdeca6"
+            ]
+        ]
+    },
+    {
+        "id": "53bd99a9ce95667d",
+        "type": "mqtt out",
+        "z": "8ec5fd30d3bebd89",
+        "name": "",
+        "topic": "esp32/batteryService",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 380,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "949052c97c7edc59",
+        "type": "mqtt out",
+        "z": "8ec5fd30d3bebd89",
+        "name": "",
+        "topic": "esp32/changeBattery",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 380,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "cac7ae194349e96a",
+        "type": "link in",
+        "z": "8ec5fd30d3bebd89",
+        "name": "trafficlightstatereceiver",
+        "links": [
+            "b47523b94a1a556f"
+        ],
+        "x": 175,
+        "y": 280,
+        "wires": [
+            [
+                "0276d9d489d3f866",
+                "748cf0b339bdd1fa"
+            ]
+        ]
+    },
+    {
+        "id": "0276d9d489d3f866",
+        "type": "mqtt out",
+        "z": "8ec5fd30d3bebd89",
+        "name": "",
+        "topic": "esp32/redLightToZumo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 380,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "748cf0b339bdd1fa",
+        "type": "debug",
+        "z": "8ec5fd30d3bebd89",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "2c67de8d09fa78c2",
+        "type": "debug",
+        "z": "8ec5fd30d3bebd89",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5fc9f1b4d0bdeca6",
+        "type": "debug",
+        "z": "8ec5fd30d3bebd89",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f4b90265a747d5de",
+        "type": "comment",
+        "z": "8ec5fd30d3bebd89",
+        "name": "Saldoen kjører på Zumoen, og blir sendt og oppdatert på dashbordet kontinuerlig",
+        "info": "",
+        "x": 440,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "259188a6ad8ffab8",
+        "type": "comment",
+        "z": "8ec5fd30d3bebd89",
+        "name": "Får inn verdier fra et annet flow, og sender til Zumoen iverksette diverse handlinger",
+        "info": "",
+        "x": 790,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0dd2c65ed5b2556f",
+        "type": "mqtt in",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "topic": "esp32/solarPanelValue",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "311b292751742a28",
+                "21c22c34436d7b67",
+                "c5b829c68f0bef5d"
+            ]
+        ]
+    },
+    {
+        "id": "21c22c34436d7b67",
+        "type": "ui_text",
+        "z": "68ddb2a442a17240",
+        "group": "51bd87615957c844",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Effekt solceller (W): ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "311b292751742a28",
+        "type": "debug",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c5b829c68f0bef5d",
+        "type": "ui_chart",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "group": "51bd87615957c844",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Effektverdi",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "4095",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f925e671206491f8",
+        "type": "mqtt in",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "topic": "esp32/solarPanelEnergy",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "e992f8d7304c2191"
+            ]
+        ]
+    },
+    {
+        "id": "32043e3510efbda6",
+        "type": "ui_form",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "label": "Selg strøm",
+        "group": "809e87adf6127e35",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Tast ønsket mengde å selge:",
+                "value": "Salgssum",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Salgssum": ""
+        },
+        "payload": "",
+        "submit": "Selg",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 210,
+        "y": 420,
+        "wires": [
+            [
+                "e992f8d7304c2191"
+            ]
+        ]
+    },
+    {
+        "id": "8d0ccdfdfa5867d2",
+        "type": "debug",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "15b2350eb4a71522",
+        "type": "debug",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0c559aaff7560ab5",
+        "type": "function",
+        "z": "68ddb2a442a17240",
+        "name": "Send pengesum videre",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 380,
+        "wires": [
+            [
+                "fcb673d71e11c235",
+                "aada1ce4d8ca5f35"
+            ]
+        ]
+    },
+    {
+        "id": "fcb673d71e11c235",
+        "type": "ui_text",
+        "z": "68ddb2a442a17240",
+        "group": "809e87adf6127e35",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Penger sendt:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1040,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e1d849a7ad19bb46",
+        "type": "mqtt out",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "topic": "esp32/solarMoneytoZumo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 1270,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "aada1ce4d8ca5f35",
+        "type": "trigger",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "op1": "",
+        "op2": "off8",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1040,
+        "y": 420,
+        "wires": [
+            [
+                "e1d849a7ad19bb46"
+            ]
+        ]
+    },
+    {
+        "id": "c1d106ab9d617c54",
+        "type": "ui_text",
+        "z": "68ddb2a442a17240",
+        "group": "809e87adf6127e35",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Strøm tilgjengelig for salg (kWh):",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 830,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3c26ec7a87e85196",
+        "type": "ui_gauge",
+        "z": "68ddb2a442a17240",
+        "name": "",
+        "group": "51bd87615957c844",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Solcellebatteri",
+        "label": "kWh",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#b31b00",
+            "#e6e600",
+            "#3acb3c"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e992f8d7304c2191",
+        "type": "function",
+        "z": "68ddb2a442a17240",
+        "name": "Lagrer variabler",
+        "func": "var powerToSell;    //Kommer fra knappen \"Selg strøm\", bestemmer hvor mye som skal selges\nvar moneyReceived;  //Penger man mottar fra salget, og sendes til Zumo\nvar solarBattery = flow.get(\"solarBattery\") || 0  //definerer en variabel som er tilgjengelig i hele flowen\n\nif(msg.topic === \"esp32/solarPanelEnergy\") {     //utføres hvis data kommer fra solceller\n    var powerReceived = (parseInt(msg.payload)/360); //Kommer fra solcelleanlegget\n    solarBattery = solarBattery + powerReceived; //fyller på \"batteriet\" i Node-RED\n    flow.set(\"solarBattery\", solarBattery);      //sender ny verdi som lagres i en variabel tilgjengelig i hele flowen\n}\n\nif(msg.payload.Salgssum) {   //hvis strøm blir solgt\n    powerToSell = msg.payload.Salgssum;   //setter inngangsverdi til en variabel\n    solarBattery = solarBattery - powerToSell;   //Regner ut total\n    flow.set(\"solarbattery\", solarBattery);    //oppdaterer variabelen i flowet\n    moneyReceived = {payload: powerToSell};    //lagrer en verdi for penger man mottar fra salget\n    return[null, moneyReceived];         //returnerer moneyReceived på output 2\n}\n\nif(solarBattery >= 50) {  //Setter en maksverdi på batteriet i Node-RED\n    flow.set(\"solarBattery\", 50)  //oppdaterer variabelen i flowet\n    solarBattery = 50;  //oppdaterer variabelen lokalt\n}\n\nmoneyReceived = 0; //setter moneyReceived til 0 etter at det er sendt til Zumoen\nvar displayMoney = {payload: parseInt(parseFloat(solarBattery).toFixed(0))}; //lager en variabel som viser mengden man har tilgjengelig på batteriet\n\nreturn[displayMoney, null]; //returnerer verdien på batteriet og sender ut på output 1",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 360,
+        "wires": [
+            [
+                "c1d106ab9d617c54",
+                "8d0ccdfdfa5867d2"
+            ],
+            [
+                "15b2350eb4a71522",
+                "0c559aaff7560ab5",
+                "3c26ec7a87e85196"
+            ]
+        ]
+    },
+    {
+        "id": "8567d5d32f777f37",
+        "type": "comment",
+        "z": "68ddb2a442a17240",
+        "name": "Får inn effektverdi fra solcellene og vises i dashbord",
+        "info": "",
+        "x": 330,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "22cc02e729ed2fe7",
+        "type": "comment",
+        "z": "68ddb2a442a17240",
+        "name": "Velger verdi som skal selges",
+        "info": "",
+        "x": 260,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d9292ea0304e2e61",
+        "type": "comment",
+        "z": "68ddb2a442a17240",
+        "name": "Lagrer variabler og regner ut penger tjent, verdi man har igjen, og sender på to forskjellige outputs",
+        "info": "",
+        "x": 750,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2b1f82543d717c38",
+        "type": "comment",
+        "z": "68ddb2a442a17240",
+        "name": "Simulert batteri som lagrer produsert strøm",
+        "info": "",
+        "x": 460,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "39456676c301d634",
+        "type": "comment",
+        "z": "68ddb2a442a17240",
+        "name": "Viser tallverdi og og grafisk verdi",
+        "info": "",
+        "x": 1110,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "32f8016a018bfa50",
+        "type": "comment",
+        "z": "68ddb2a442a17240",
+        "name": "Viser hvor mye penger som blir sendt til Zumo32U4",
+        "info": "",
+        "x": 1350,
+        "y": 380,
+        "wires": []
+    }
+]
