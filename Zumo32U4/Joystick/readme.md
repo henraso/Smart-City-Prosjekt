@@ -1,7 +1,7 @@
 Dette er mappen for programmene til tilleggsmodulen som lar oss styre Zumo-bilen med 
 en Joystick.
 
-modulen bruker to ESP-er og en Zumo.
+Modulen bruker to ESP-er og en Zumo.
 
 Programmet som heter MAC_Address må først kjøres på mottaker ESP32en, for å finne riktig MAC adresse.  
 Programmet som heter ZumoJOYSTICK skal lastes opp til Zumoen.  
